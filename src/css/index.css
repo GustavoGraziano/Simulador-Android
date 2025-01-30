@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+
+}
+
+.smartphone-container {
+    width: 442px;
+    height: 960px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.smartphone {
+    width: 422px;
+    height: 960px;
+    background-color: #0C0C0C;
+    border-radius: 25px;
+    position: relative;
+}
+
+.smartphone-camera {
+    width: 20px;
+    height: 20px;
+    background-color: #111;
+    border-radius: 50%;
+    border: 1.5px solid #232323;
+    outline: 3px solid #0C0C0C;
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+
+.smartphone-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: absolute;
+    right: -5px;
+    top: 120px;
+}
+
+.smartphone-btns-volume {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.btn-volume-plus {
+    cursor: pointer;
+    width: 5px;
+    height: 40px;
+    background-color: #0C0C0C;
+    border-radius: 0 4px 2px 0;
+}
+
+.btn-volume-less {
+    cursor: pointer;
+    width: 5px;
+    height: 40px;
+    background-color: #0C0C0C;
+    border-radius: 0 2px 4px 0;
+}
+
+.smartphone-btn-power {
+    cursor: pointer;
+    width: 2px;
+    height: 80px;
+    background-color: #0C0C0C;
+    border-radius: 0 2px 2px 0;
+}
+
+.smartphone-screen {
+    width: 412px;
+    height: 915px;
+    background: url(../assets/wallpapers/wallpaper-2.jpeg) no-repeat center center;
+    background-size: cover;
+    border-radius: 25px;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
