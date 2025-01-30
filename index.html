@@ -5,12 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="src/css/index.css">
+
         <!-- Google Fonts Start -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Google Fonts End -->
+
+        <!-- Font Awesome Start -->
+        <script src="https://kit.fontawesome.com/845ff96034.js" crossorigin="anonymous"></script>
+        <!-- Font Awesome End -->
+
         <title>Simulador Android (Moto G42)</title>
     </head>
     <body>
@@ -24,7 +30,34 @@
                     <div class="smartphone-btn-power"></div>
                 </div>
                 <div class="smartphone-camera"></div>
-                <div class="smartphone-screen"></div>
+                <div class="smartphone-screen">
+                    <header class="status-bar">
+                        <div class="notification-area">
+                            <p class="digital-clock">12:34</p>
+                            <div class="notifications"></div>
+                        </div>
+                        <div class="status-icons-area">
+                            <div class="battery">
+                                <i class="material-icons">battery_full</i>
+                                <p class="battery-percentage">100%</p>
+                            </div>
+                            <i class="material-icons">signal_cellular_null</i>
+                            <i class="material-icons">signal_wifi_4_bar</i>
+                        </div>
+                    </header>
+                    <main></main>
+                    <footer class="navigation-bar">
+                        <button class="navigation-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        <button class="navigation-btn">
+                            <i class="fa-solid fa-circle"></i>
+                        </button>
+                        <button class="navigation-btn">
+                            <i class="fa-solid fa-square"></i>
+                        </button>
+                    </footer>
+                </div>
             </div>
         </div>
     </body>

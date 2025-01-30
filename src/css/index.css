@@ -1,3 +1,8 @@
+:root {
+    --smartphone-black: #0C0C0C;
+    --smartphone-color: #072231;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,8 +18,9 @@ body {
     height: 100dvh;
     display: flex;
     align-items: center;
-
 }
+
+/* -----SMARTPHONE ----- */
 
 .smartphone-container {
     width: 442px;
@@ -28,7 +34,8 @@ body {
 .smartphone {
     width: 422px;
     height: 960px;
-    background-color: #0C0C0C;
+    background-color: var(--smartphone-black);
+    border: 3px solid var(--smartphone-color);
     border-radius: 25px;
     position: relative;
 }
@@ -39,9 +46,9 @@ body {
     background-color: #111;
     border-radius: 50%;
     border: 1.5px solid #232323;
-    outline: 3px solid #0C0C0C;
+    outline: 3px solid var(--smartphone-black);
     position: absolute;
-    top: 18px;
+    top: 23px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 99;
@@ -52,7 +59,7 @@ body {
     flex-direction: column;
     gap: 40px;
     position: absolute;
-    right: -5px;
+    right: -7px;
     top: 120px;
 }
 
@@ -66,7 +73,7 @@ body {
     cursor: pointer;
     width: 5px;
     height: 40px;
-    background-color: #0C0C0C;
+    background-color: var(--smartphone-color);
     border-radius: 0 4px 2px 0;
 }
 
@@ -74,19 +81,22 @@ body {
     cursor: pointer;
     width: 5px;
     height: 40px;
-    background-color: #0C0C0C;
+    background-color: var(--smartphone-color);
     border-radius: 0 2px 4px 0;
 }
 
 .smartphone-btn-power {
     cursor: pointer;
-    width: 2px;
+    width: 3px;
     height: 80px;
-    background-color: #0C0C0C;
+    background-color: var(--smartphone-color);
     border-radius: 0 2px 2px 0;
 }
 
 .smartphone-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 412px;
     height: 915px;
     background: url(../assets/wallpapers/wallpaper-2.jpeg) no-repeat center center;
@@ -96,4 +106,62 @@ body {
     top: 15px;
     left: 50%;
     transform: translateX(-50%);
+    filter: brightness(1);
+}
+
+.status-bar {
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px;
+}
+
+.status-bar .material-icons {
+    font-size: 16px !important;
+}
+
+.notification-area {
+    display: flex;
+    gap: 4px;
+}
+
+.status-icons-area {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4px;
+}
+
+.battery {
+    display: flex;
+}
+
+.navigation-bar {
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.navigation-btn {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFF;
+    transform: scaleX(-1);
+    border-radius: 24px;
+    padding: 16px 52px;
+    transition: background-color 0.2s;
+}
+
+.navigation-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.navigation-btn:active {
+    background-color: rgba(255, 255, 255, 0.3);
 }
