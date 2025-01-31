@@ -1,0 +1,104 @@
+.volume-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    top: 50%;
+    right: -55px;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: right 0.3s, opacity 0.3s;
+}
+
+.volume-panel.active {
+    right: 6px;
+    opacity: 1;
+}
+
+.volume-config {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 4px;
+    background-color: var(--bg-light);
+    border-radius: 25px;
+}
+
+.volume-mode {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: var(--text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    aspect-ratio: 1 / 1;
+}
+
+.line-bar-volume-guide {
+    height: 150px;
+    position: relative;
+}
+
+.line-bar-volume-guide::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 118px;
+    background-color: #565c72;
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.volume-level {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 42px;
+    height: 42px;
+    color: var(--text-light);
+    background-color: var(--primary-color);
+    border-radius: 21px;
+    padding-top: 9px;
+    z-index: 2;
+    position: absolute;
+    bottom: 0px;
+}
+
+.more-volume-options {
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.more-volume-options:hover {
+    background-color: #ececec;
+}
+
+.subtitles {
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: var(--bg-light);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.subtitles:hover {
+    background-color: #ececec;
+}
+
+.volume-mode i, .volume-level i, .more-volume-options i, .subtitles i {
+    font-size: 22px;
+}

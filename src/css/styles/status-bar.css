@@ -1,0 +1,29 @@
+.status-bar {
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px;
+    user-select: none;
+}
+
+.status-bar i {
+    font-size: 16px !important;
+}
+
+.notification-area {
+    display: flex;
+    gap: 4px;
+}
+
+.status-icons-area {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4px;
+}
+
+.battery {
+    display: flex;
+}

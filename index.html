@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
         <!-- Google Fonts End -->
 
         <!-- Font Awesome Start -->
@@ -24,8 +25,8 @@
             <div class="smartphone">
                 <div class="smartphone-btns">
                     <div class="smartphone-btns-volume">
-                        <div class="btn-volume-plus"></div>
-                        <div class="btn-volume-less"></div>
+                        <div class="btn-volume-plus" id="btn-volume-plus"></div>
+                        <div class="btn-volume-less" id="btn-volume-less"></div>
                     </div>
                     <div class="smartphone-btn-power"></div>
                 </div>
@@ -33,10 +34,10 @@
                 <div class="smartphone-screen">
                     <header class="status-bar">
                         <div class="notification-area">
-                            <p class="digital-clock" id="digital-clock">12:34</p>
+                            <p class="digital-clock" id="digital-clock"></p>
                             <div class="notifications"></div>
                         </div>
-                        <div class="status-icons-area">
+                        <div class="status-icons-area" id="status-icons-area">
                             <div class="battery">
                                 <i class="material-icons">battery_full</i>
                                 <p class="battery-percentage">100%</p>
@@ -46,9 +47,25 @@
                         </div>
                     </header>
                     <main class="home-screen">
-                        <div class="app-grid">
-                            
+                        <div class="volume-panel" id="volume-panel">
+                            <div class="volume-config">
+                                <button class="volume-mode">
+                                    <i class="material-icons-outlined" id="volume-mode-icon">notifications</i>
+                                </button>
+                                <div class="line-bar-volume-guide">
+                                    <button class="volume-level" id="volume-level">
+                                        <i class="material-icons">music_note</i>
+                                    </button>
+                                </div>
+                                <button class="more-volume-options">
+                                    <i class="material-icons-outlined">more_horiz</i>
+                                </button>
+                            </div>
+                            <button class="subtitles">
+                                <i class="material-icons-outlined">subtitles_off</i>
+                            </button>
                         </div>
+                        <div class="app-grid"></div>
                         <div class="dock">
                             <div class="app">
                                 <img src="src/assets/app-icons/telefone.png" class="app-icon">

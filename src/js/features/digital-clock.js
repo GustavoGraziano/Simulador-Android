@@ -1,6 +1,7 @@
 export default class DigitalClock {
     constructor(elementId) {
         this.element = document.getElementById(elementId)
+        this.start()
     }
 
     formatTime() {

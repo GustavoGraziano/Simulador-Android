@@ -1,0 +1,55 @@
+.home-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px 0 16px;
+    position: relative;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    width: 60px;
+    margin-bottom: 12px;
+    user-select: none;
+    transition: transform 0.5s;
+}
+
+.app:hover {
+    transform: scale(1.1);
+}
+
+.app-icon {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.app-name {
+    font-size: 11px;
+    color: #FFF;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dock {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    gap: 20px;
+    margin: 0 auto;
+}
